@@ -139,6 +139,7 @@ a>img{
     grid-template-columns: repeat(2, 1fr);
 }
 .projContent{
+	display: grid;
     background-color: var(--white);
     border-radius: 10px;
     color: #212b81;
