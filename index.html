@@ -17,7 +17,7 @@
                     <img src="search.svg" alt="">
                 </div>
                 <div>
-                    <input type="text" name="search" id="search">
+                    <input type="text" name="search">
                 </div>
                 <div class="smallimg">
                         <img src="bell.svg" alt="" class="smallimg">
@@ -31,7 +31,7 @@
                 <img src="reindeer.svg" alt="">
                 <div>
                     <p style="font-size: smaller;">Hi There!</p>
-                    <p style="font-weight:bolder; font-size: larger;">Morgan Oakley (@morgan)</p>
+                    <p>Morgan Oakley (@morgan)</p>
                 </div>
                 <div class="buttons">
                     <button>New</button>
@@ -41,27 +41,30 @@
             </div>
         </div>
         <div class="sidebar">
+            <div id="logo" style="font-size: larger; font-weight: bolder;"><img src="dashboard-5482.svg" alt=""><p>DASHBOARD</p></div>  
             <ul>
-                <li id="logo" style="font-size: larger; font-weight: bolder;"><img src="dashboard-5482.svg" alt="">DASHBOARD</li>  
-                <li><a href=""><img src="home.svg" alt="">Home</a></li>
-                <li><a href=""><img src="profile.svg" alt="">Profile</a></li>
-                <li><a href=""><img src="messages.svg" alt="">Messages</a></li>
-                <li><a href=""><img src="history.svg" alt="">History</a></li>
-                <li><a href=""><img src="tasks.svg" alt="">Tasks</a></li>
-                <li><a href=""><img src="communities.svg" alt="">Communities</a></li>
-                <li id="branding"><a href=""><img src="settings.svg" alt="">Settings</a></li>
-                <li><a href=""><img src="support.svg" alt="">Support</a></li>
-                <li><a href=""><img src="Privacy.svg" alt="">Privacy</a>
+                <div class="sidebarTop">
+                    <li><a href=""><img src="home.svg" alt=""></a><p>Home</p></li>
+                    <li><a href=""><img src="profile.svg" alt=""></a><p>Profile</p></li>
+                    <li><a href=""><img src="messages.svg" alt=""></a><p>Messages</p></li>
+                    <li><a href=""><img src="history.svg" alt=""></a><p>History</p></li>
+                    <li><a href=""><img src="tasks.svg" alt=""></a><p>Tasks</p></li>
+                </div>
+                <div class="sidebarBottom">
+                    <li><a href=""><img src="communities.svg" alt=""></a><p>Communities</p></li>
+                    <li><a href=""><img src="settings.svg" alt=""></a><p>Settings</p></li>
+                    <li><a href=""><img src="support.svg" alt=""></a><p>Support</p></li>
+                    <li><a href=""><img src="Privacy.svg" alt=""></a><p>Privacy</p>
+                </div>
               </ul>
         </div>
         <div class="main">
             <div class="projects">
-                <div class="title">Your Projects</div>
+                <div class="title" id="titleProjects">Your Projects</div>
                 <div class="cards">
                     <div class="projContent">
                         <p><b>Super Cool Project</b><br>1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation.
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                         <div class="icons">
                             <img src="star-plus-outline.svg" alt="">
@@ -71,8 +74,7 @@
                     </div>
                     <div class="projContent">
                         <p><b>Super Cool Project</b><br>1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation.
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                         <div class="icons">
                             <img src="star-plus-outline.svg" alt="">
@@ -82,8 +84,7 @@
                     </div>
                     <div class="projContent">
                         <p><b>Super Cool Project</b><br>1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation.
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                         <div class="icons">
                             <img src="star-plus-outline.svg" alt="">
@@ -93,8 +94,7 @@
                     </div>
                     <div class="projContent">
                         <p><b>Super Cool Project</b><br>1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation.
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                         <div class="icons">
                             <img src="star-plus-outline.svg" alt="">
@@ -104,8 +104,7 @@
                     </div>
                     <div class="projContent">
                         <p><b>Super Cool Project</b><br>1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation.
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                         <div class="icons">
                             <img src="star-plus-outline.svg" alt="">
@@ -115,8 +114,7 @@
                     </div>
                     <div class="projContent">
                         <p><b>Super Cool Project</b><br>1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation.
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                         <div class="icons">
                             <img src="star-plus-outline.svg" alt="">
@@ -125,11 +123,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="right">
-                <div class="title">Announcements</div>
-                
+            <div class="right">                
+                <div class="title" id="titleAnnounce">Announcements</div>
                 <div class="announce">
                     <div class="annContent">
                         <div>
@@ -153,9 +149,8 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="title">Trending</div>
-                <div class="trending">
+                    <div class="title" id="titleTrending">Trending</div>
+                    <div class="trending">
                     <div class="trendContent">
                         <div>
                             <img src="reindeer.svg" alt="" class="reindeer">
@@ -164,7 +159,8 @@
                             <p><b>@morgan</b></p>
                             <p style="font-size: smaller;">World Peace builder</p>
                         </div>                        
-                    </div><div class="trendContent">
+                    </div>
+                    <div class="trendContent">
                         <div>
                             <img src="reindeer.svg" alt="" class="reindeer">
                         </div>
@@ -196,5 +192,4 @@
         </div>
     </div>
 </body>
-
 </html>
