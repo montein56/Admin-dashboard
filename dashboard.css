@@ -57,7 +57,7 @@ input{
     display: grid;
     background-color: var(--grey);
     border: solid 1 px var(--grey);
-    padding:0 0 0 12px; /*this is padding on left for search term*/
+    padding:0 0 0 12px; /*padding on left for search term entered*/
 }
 .headtwo>div>p{
     font-weight:bolder;
@@ -144,19 +144,20 @@ a>img{
     grid-template-areas: 
     "titleProjects"
     "cards";
-    grid-template-rows: 7% 1fr;
+    grid-template-rows: 4% 1fr;
 }
 #titleProjects{
+    display: grid;
     grid-area: titleProjects;
 }
 .cards{
     display: grid;
+    grid-area: cards;
     gap: 2%;
     grid-template-columns: repeat(2, 1fr);
-    grid-area: cards;
 }
 .title{
-    align-self: center;
+    align-self:flex-end;
     color: #212b81;
     font-weight: bolder;
     font-size: 1.2rem;
@@ -169,9 +170,7 @@ a>img{
     padding: 2%;
 }
 .icons{
-    /* display: grid; */
     align-self: flex-end;
-    /* justify-self:normal; */
     margin-left: auto;
 }
 .icons>img{
@@ -192,37 +191,39 @@ a>img{
     "announce"
     "titleT"
     "trending";
-    grid-template-rows: 7% 1fr;
-}
-.announce{
-    grid-area: announce;
-}
-.trending{
-    grid-area: trending;
-}
-.announce, .trending{
-    display: grid;
-    padding: 2% 4%;
-    background-color: var(--white);
-    border-radius: 10px;
-    color: #212b81;
+    grid-template-rows: 4% 1fr 4% 1fr;
 }
 #titleAnnounce{
     grid-area: titleA;
 }
 #titleTrending{
     grid-area: titleT;
-    margin-top: 4%;
 }
 .annContent{
-    display: flex;
-    border-bottom: solid var(--grey) 1px;
+    grid-area: announce;
+    display: grid;
 }
 .trendContent{
-    display: flex;
+    display: grid;
+    grid-area: trending;
 }
-.annContent:last-child{
-    border: none;
+.trenditem{
+    display: flex;
+    flex-direction: row;
+    padding: 1% 0;
+    align-self: center;
+}
+.annContent, .trendContent{
+    padding: 2% 4%;
+    background-color: var(--white);
+    border-radius: 10px;
+    color: #212b81;
+}
+.annContent>div>:nth-child(2){
+    border-bottom: solid var(--grey) 1px;
+}
+.annContent>div:last-child>p{
+    border-bottom: none;
 }
 .smallimg{
     display: grid;
@@ -281,10 +282,11 @@ p{
         grid-template-areas:
         "projects"
         "right";
+        gap: 0;
     }
     .right{
         grid-template-columns: 3fr 2fr;
-        grid-template-rows:7% 1fr;
+        grid-template-rows:12% 1fr;
         grid-template-areas: 
         "titleA titleT"
         "announce trending";
@@ -336,13 +338,17 @@ p{
     li>p{
         display: none;
     }
+    .projects{
+        grid-template-rows: 1fr;
+    }
     .cards{
         grid-template-columns: 1fr;
         gap: 1%;
     }
     .right{
-        margin-top: 44px;
+        margin-top:34px;
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas: 
         "titleA"
         "announce"
