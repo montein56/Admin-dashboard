@@ -144,7 +144,7 @@ a>img{
     grid-template-areas: 
     "titleProjects"
     "cards";
-    grid-template-rows: 4% 1fr;
+    grid-template-rows: 1fr 25fr;
 }
 #titleProjects{
     display: grid;
@@ -191,7 +191,7 @@ a>img{
     "announce"
     "titleT"
     "trending";
-    grid-template-rows: 4% 1fr 4% 1fr;
+    grid-template-rows: 1fr 12fr 1fr 12fr;
 }
 #titleAnnounce{
     grid-area: titleA;
@@ -286,7 +286,7 @@ p{
     }
     .right{
         grid-template-columns: 3fr 2fr;
-        grid-template-rows:12% 1fr;
+        grid-template-rows: 1fr 10fr;
         grid-template-areas: 
         "titleA titleT"
         "announce trending";
@@ -338,9 +338,6 @@ p{
     li>p{
         display: none;
     }
-    .projects{
-        grid-template-rows: 1fr;
-    }
     .cards{
         grid-template-columns: 1fr;
         gap: 1%;
@@ -348,7 +345,6 @@ p{
     .right{
         margin-top:34px;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
         grid-template-areas: 
         "titleA"
         "announce"
